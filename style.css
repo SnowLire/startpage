@@ -1,15 +1,15 @@
 :root {
-    --color-bg: #282828;
-    --color-fg: #EADBB2;
-    --color-link: #8F9191;
-    --color-link-visited: #668F8B;
-    --color-link-hover: #FA7921 ;
+    --color-bg: #050608;
+    --color-fg: #c1c3c4;
+    --color-link: #03aeff;
+    --color-link-visited: #ea5ce2;
+    --color-link-hover: #ea770d ;
 }
 
 html, body {
   background: var(--color-bg);
   color: var(--color-fg);
-  font-family: "Fira Code";
+  font-family: "FiraCode Nerd Font";
   height: 100%;
   width: 100%;
   margin: 0;
@@ -48,7 +48,6 @@ html, body {
   flex-direction: column;
   align-items: center;
   font-size: 40px;
-  padding-top: 60px;
 }
 
 .category {
@@ -94,7 +93,7 @@ a:hover {
 }
 
 .blinking {
-  animation: opacity 1s ease-in-out infinite;
+  animation: opacity 1s cubic-bezier(.65, .05, .45, .95) infinite;
   opacity: 1;
 }
 
